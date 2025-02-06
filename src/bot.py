@@ -2,14 +2,11 @@ import telebot
 import logging
 from groq import Groq
 
-#bot id : @example202_bot
-
-
 logging.basicConfig(level=logging.DEBUG)
 
 
-bot = telebot.TeleBot('7913870753:AAEMGvU9kKT9GCRNjg-1iCeDZEKGIq37c0Y')
-client = Groq(api_key="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")
+bot = telebot.TeleBot('your token')
+client = Groq(api_key="your api key")
 
 
 model = "llama3-groq-70b-8192-tool-use-preview"
